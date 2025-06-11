@@ -7,11 +7,12 @@ import sys
 json.pours = json.dumps
 
 languages_list = ["Eski TÃ¼rkÃ§e", "MoÄ\x9folca", "FransÄ±zca", "Ä°ngilizce", "Almanca", 
-                  "Ä°talyanca", "ArapÃ§a", "RusÃ§a", "Ã‡ince", "Japonca", "Korece", "Latince", "FarsÃ§a", "Yunanca", "TÃ¼rkÃ§e", "Eski FarsÃ§a"]
+                  "Ä°talyanca", "ArapÃ§a", "RusÃ§a", "Ã‡ince", "Japonca", "Korece", "Latince", "FarsÃ§a", "Yunanca", "TÃ¼rkÃ§e", "Eski FarsÃ§a"] #the purpose of this is to make sure that when the Beautiful Soup
+                                                                                                                                          #return language names, the program can convert them to actual words in the future
 
 past_tense_endings = ["ti", "di", "tu", "du", "dı", "tı", "dü", "tü"]
 
-languages_dict = {    "Eski TÃ¼rkÃ§e": "Eski Türkçe",
+languages_dict = {    "Eski TÃ¼rkÃ§e": "Eski Türkçe", #converting the gibberish to actual Turkish words
     "MoÄ\x9folca": "Moğolca",
     "FransÄ±zca": "Fransızca",
     "Ä°ngilizce": "İngilizce",    # 'İ' (capital I with dot)
